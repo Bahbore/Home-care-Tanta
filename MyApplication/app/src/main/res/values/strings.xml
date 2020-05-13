@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name"> Home Care Tanta </string>
+    <string name="Welcome_Message"> Welcome to Home Care Tanta </string>
+    <string name="Sign_up_Message"> Sign up with Email </string>
+    <string name="OR_Messsage">-------------------- or continue with --------------------</string>
+    <string name="Have_ACC">Have an account ? Login </string>
+</resources>

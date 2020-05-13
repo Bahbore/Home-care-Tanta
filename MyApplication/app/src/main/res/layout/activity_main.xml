@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat6"
+        android:layout_width="400dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="429dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/Have_an_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/g"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-84dp"
+
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/Privacy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/Welcome_Message"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="70dp"
+            tools:layout_editor_absoluteY="261dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="280dp"
+            android:layout_height="54dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/round_shape"
+            android:text="@string/Sign_up_Message"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="70dp"
+            tools:layout_editor_absoluteY="315dp"
+            android:onClick="Sign_up_with_email"
+
+
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/OR_Messsage"
+            tools:layout_editor_absoluteX="70dp"
+            tools:layout_editor_absoluteY="404dp"
+
+            />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutCompat3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="438dp">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="25dp"
+                android:background="@drawable/ic_facebook">
+
+            </Button>
+
+            <Button
+                android:id="@+id/Google_Sign_in"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/ic_sv_google"
+                android:shadowColor="@color/end"
+
+                ></Button>
+
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="25dp"
+                android:background="@drawable/ic_mobile"></Button>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+
+        android:id="@+id/Privacy"
+        android:layout_width="290dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="24dp"
+        android:text="By Continue,you agree to Home Care Tanta's Terms of Use and Privacy Policy"
+        android:textColor="@color/Button"
+        app:layout_constraintBottom_toTopOf="@+id/Have_an_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Have_an_account"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Have_ACC"
+        android:textColor="@color/Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat6"
+        android:onClick="click_Have_Acc"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
